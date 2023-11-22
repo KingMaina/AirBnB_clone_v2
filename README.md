@@ -140,3 +140,15 @@ Usage: <class_name>.update(<_id>, <dictionary>)
 (hbnb) ["[User] (98bea5de-9cb0-4d78-8a9d-c4de03521c30) {'updated_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134362), 'name': 'Fred the Frog', 'age': 9, 'id': '98bea5de-9cb0-4d78-8a9d-c4de03521c30', 'created_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134343)}"]
 ```
 <br>
+
+
+SQL Scripts
+Allowed editors: vi, vim, emacs
+All your files will be executed on Ubuntu 20.04 LTS using MySQL 8.0
+Your files will be executed with SQLAlchemy version 1.4.x
+All your files should end with a new line
+All your SQL queries should have a comment just before (i.e. syntax above)
+All your files should start by a comment describing the task
+All SQL keywords should be in uppercase (SELECT, WHERE…)
+A README.md file, at the root of the folder of the project, is mandatory
+The length of your files will be tested using wc
