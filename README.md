@@ -137,10 +137,7 @@ Usage: <class_name>.update(<_id>, <dictionary>)
 (hbnb) User.update("98bea5de-9cb0-4d78-8a9d-c4de03521c30", {'name': 'Fred the Frog', 'age': 9})
 (hbnb)
 (hbnb) User.all()
-(hbnb) ["[User] (98bea5de-9cb0-4d78-8a9d-c4de03521c30) {'updated_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134362), 'name': 'Fred the Frog', 'age': 9, 'id': '98bea5de-9cb0-4d78-8a9d-c4de03521c30', 'created_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134343)}"]
-```
-<br>
-
+(hbnb) ["[User] (98bea5de-9cb0-4d78-8a9d-c4de03521c30) {'updated_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134362), 'name': 'Fred the Frog', 'age': 9, 'id': '98bea5de-9cb0-4d78-8a9d-c4de03521c30', 'created_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134343)}")
 
 SQL Scripts
 Allowed editors: vi, vim, emacs
@@ -152,3 +149,15 @@ All your files should start by a comment describing the task
 All SQL keywords should be in uppercase (SELECT, WHERE…)
 A README.md file, at the root of the folder of the project, is mandatory
 The length of your files will be tested using wc
+GitHub
+There should be one project repository per group. If you clone/fork/whatever a partner’s project repository with the same name before the second deadline, you risk a 0% score.
+
+More Info
+
+
+Comments for your SQL file:
+$ cat my_script.sql
+-- first 3 students in the Batch ID=3
+-- because Batch 3 is the best!
+SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 3;
+$
