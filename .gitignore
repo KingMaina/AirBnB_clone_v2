@@ -1,9 +1,0 @@
-# pycache
-**/__pycache__
-
-# Vim swap files
-*~
-*.swp
-
-# JSON object file storage
-file.json
