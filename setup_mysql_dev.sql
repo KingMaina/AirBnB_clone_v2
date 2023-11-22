@@ -1,6 +1,6 @@
 -- Prepares a MYSQL server
 
--- Create the database
+-- Create the development database
 CREATE DATABASE IF NOT EXISTS hbnb_dev_db;
 
 -- Create a user
