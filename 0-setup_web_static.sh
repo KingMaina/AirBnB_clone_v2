@@ -14,7 +14,7 @@ else
   echo "Hello nginx" > /data/web_static/releases/test/index.html
 
   # Create sym links to test folder
-  ln -s -f /data/web_static/releases/test/ /data/web_static/current
+  ln -s /data/web_static/releases/test/ /data/web_static/current
 
   # Give permissions to user and group `ubuntu`
   chown -R ubuntu:ubuntu /data/
