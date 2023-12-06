@@ -27,3 +27,4 @@ else
   # Restart nginx
   service nginx restart
 fi
+
