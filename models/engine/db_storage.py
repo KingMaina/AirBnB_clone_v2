@@ -59,6 +59,12 @@ class DBStorage():
                     if new_dict[key].get('__class__', None) is not None:
                         del new_dict[key]['__class__']
             return new_dict
+        elif cls in self.__classes:
+            query = self.__session.query(self.__classes[cls]).all()
+            for obj in query:
+                key = obj.__class__.__name__ + '.' + obj.id
+                new_dict[key] = obj.to_dict()
+            return new_dict
         elif cls.__name__ in self.__classes:
             query = self.__session.query(
                 self.__classes[cls.__name__]
