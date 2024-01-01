@@ -4,7 +4,6 @@ from os import getenv
 
 
 if getenv('HBNB_TYPE_STORAGE') == 'db':
-    from models.base_model import BaseModel, Base
     from sqlalchemy import Table
     from sqlalchemy.orm import relationship
     from sqlalchemy import (
@@ -14,6 +13,9 @@ if getenv('HBNB_TYPE_STORAGE') == 'db':
         Integer,
         Float
     )
+    from models.base_model import BaseModel, Base
+    from models.amenity import Amenity
+    from models.review import Review
 
     # Create association table for Many-to-Many
     place_amenity = Table(

@@ -23,7 +23,8 @@ if getenv('HBNB_TYPE_STORAGE') == 'db':
         )
         places = relationship(
             'Place',
-            backref='cities'
+            backref='cities',
+            cascade="all, delete-orphan"
         )
 else:
 
