@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """This module defines a class User"""
-from models import HBNB_TYPE_STORAGE
+from os import getenv
 
 
-if HBNB_TYPE_STORAGE == 'db':
+if getenv('HBNB_TYPE_STORAGE') == 'db':
     from models.base_model import BaseModel, Base
     from models.review import Review
+    from models.place import Place
     from sqlalchemy.orm import relationship
     from sqlalchemy import (
         Column, String,

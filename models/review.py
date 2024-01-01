@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """ Review module for the HBNB project """
-from models import HBNB_TYPE_STORAGE
+from os import getenv
 
 
-if HBNB_TYPE_STORAGE == 'db':
+if getenv('HBNB_TYPE_STORAGE') == 'db':
     from sqlalchemy import Column, String, ForeignKey
     from models.base_model import BaseModel, Base
 

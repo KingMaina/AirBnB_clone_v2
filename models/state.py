@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """ State Module for HBNB project """
+from os import getenv
 from models.base_model import BaseModel
 from models.city import City
-from models import HBNB_TYPE_STORAGE
 
 
-if HBNB_TYPE_STORAGE == 'db':
+if getenv('HBNB_TYPE_STORAGE') == 'db':
     from sqlalchemy import Column, String
     from sqlalchemy.orm import relationship
     from models.base_model import Base
